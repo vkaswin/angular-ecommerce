@@ -1,0 +1,24 @@
+<header>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-2">
+                <img [routerLink]="['/']" src="logo" alt="amazon" class="logo">
+            </div>
+            <div class="col-md-6 p-0">
+                <app-search></app-search>
+            </div>
+            <div class="col-md-4">
+                <div class="header-icons">
+                    <div class="badge">
+                        <i class="bi bi-bell"></i>
+                        <!-- <span v-if="notification !== 0">{{notification}}</span> -->
+                    </div>
+                    <div class="badge" [routerLink]="['/cart']">
+                        <i class="bi bi-cart2"></i>
+                        <!-- <span v-if="cart !== 0">{{ cart }}</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
